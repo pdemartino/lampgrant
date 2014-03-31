@@ -1,0 +1,4 @@
+IP=192.168.33.10
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+mkdir -p $DIR/../exports/www && mount -t nfs $IP:/var/www  $DIR/../exports/www 
